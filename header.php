@@ -2,7 +2,7 @@
 
 <head>
     <title>Podcasts App Prototype</title>
-    <link rel=stylesheet href="style.css" type="text/css" media="screen" />
+    <link rel=stylesheet href="static/style.css" type="text/css" media="screen" />
 </head>
 
 <body>

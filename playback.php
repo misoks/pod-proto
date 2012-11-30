@@ -2,7 +2,7 @@
 
 <head>
     <title>Podcasts App Prototype</title>
-    <link rel=stylesheet href="style.css" type="text/css" media="screen" />
+    <link rel=stylesheet href="static/style.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="controls">
-            <img src="arc.png" class="arc">
+            <img src="static/arc.png" class="arc">
             <div class="pp-button play" onclick="
                 if(this.className == 'pp-button play') {
                     this.className = 'pp-button pause';
@@ -33,7 +33,7 @@
                 }
                 ">
             </div>
-            <img src="volume.png" class="volume">
+            <img src="static/volume.png" class="volume">
         </div>
     </div>
 </div>
