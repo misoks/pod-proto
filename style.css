@@ -1,0 +1,371 @@
+body {
+    color: whitesmoke;
+    font-family: Helvetica;
+    font-size: 15pt;
+    text-align: center;
+}
+.mask {
+    position: absolute;
+    left: 630px;
+    width: 100px;
+    height: 700px;
+    z-index: 100;
+}
+body, .mask {
+   background-color: midnightblue;
+}
+h1, h2, h3, h4 {margin: 0; padding: 0; }
+h1 { font-size: 1.1em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: .9em; font-weight: normal; }
+p {
+    text-align: center;
+    margin: 0;
+}
+
+.small {width: 35px; height: 35px; }
+
+.emphasis {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#container {
+    width: 400px;
+    height: 839px;
+    position: relative;
+    margin-left: 200px;
+}
+#phone-frame {
+    background-color: transparent;
+    background-image: url('iphone.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    width: 100%; height: 100%;
+}
+#phone-screen {
+    position: absolute;
+    top: 139px;
+    left: 30px;
+    background-color: gray;
+    width: 345px; height: 588px;
+}
+.header-bar {
+    display: block;
+    position: static;
+    position: relative;
+    height: 50px;
+    background-color: #333;
+    padding-top: 15px;
+}
+
+.header-button {
+    background-color: red;
+    height: 40px;
+    border: 0px;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: bottom;
+    position: absolute;
+    display: inline-block;
+    width: 18%;
+    top: 20%;
+    border-radius: 5px;
+}
+.header-button,
+.header-bar a {
+    color: white;
+    text-decoration: none;
+}
+.header-bar h1 {
+    display: inline;
+    width: 54%;
+    position: absolute;
+    left: 23%; top: 35%;
+    margin: 0;
+    text-align: center;
+    overflow: visible;
+    white-space: nowrap;
+}
+.back-button .header-button {
+    left: 3%;
+    margin: 0; padding: 0;
+    cursor: pointer;
+}
+.now-playing {
+    right: 3%;
+}
+.now-playing a {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+#content-scroller {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 433px; 
+    width: 450px;
+}
+#content {
+    padding: 25px 19px;
+    width: 305px;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 20px 0;
+}
+.button:hover {
+    background-color: darkgray;
+}
+.big {
+    width: 100%;
+    max-width: 100%;
+    background-color: lightgray;
+    color: black;
+}
+.create { width: 65%; margin-right: 5px; background-color: blue; color: white;}
+.little { 
+    width: 25%; 
+    font-size: .8em; 
+    line-height: inherit; 
+    padding: 27px 0 20px 0; 
+    background-color: lightgray; 
+    color: black;
+}
+.top { margin-top: 0;}
+.bottom { margin-bottom: 0; }
+
+.mixes {
+    margin: 0; padding: 0;
+    list-style-type: none;
+}
+.mixes li {
+    margin: 0;
+}
+
+ul .button {
+    border-radius: 0;
+}
+#content li:first-child a {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#content li:last-child a {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#content ul .button {
+    margin: 0;
+}
+
+/* ============ Scrolling Selector =============*/
+.scroll-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%; height: 150px;
+    margin: 25px 10%;
+    background-color: white;
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
+    z-index: 3;
+}
+.scroll-highlighter {
+    position: absolute;
+    width: 100%; height: 33%;
+    background-color: skyblue;
+    opacity: .5;
+    top: 32%;
+    z-index: 2;
+}
+.scrolling-box {
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll;
+    z-index: 2;
+    padding-left: 20px;
+}
+.hour, .minute {
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    padding-left: 20px;
+    position: absolute;
+    margin-left: -10px;
+    z-index: 1;
+}
+.hour {
+    left: 20px;
+}
+.minute {
+    left: 50%;
+    margin-left: 0px;
+    border-left: 1px solid whitesmoke;
+    text-align: left;
+}
+.scrolling-box ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+.scrolling-box li {
+    display: block;
+    height: 1.8em;
+}
+.scrolling-box li:last-child {
+    height: 35px;
+}
+.hours li {
+    border-right: 1px gray solid;
+    text-align: right;
+}
+.minutes li {
+    text-align: left;
+}
+.hours-label { margin-right: 30px; }
+.minutes-label { margin-left: 30px; }
+
+
+
+.library-list {
+    width: 100%;
+    margin-top: 15px;
+    background-color: lightgray;
+    font-size: .9em;
+    color: black;
+    border-collapse: collapse;
+}
+.library-list td {
+    padding: 7px 5px 5px 5px;
+}
+.library-list input {
+    margin: 0;
+    width: 20px; height: 20px;
+}
+
+.name-mix {
+    width: 90%;
+    height: 50px;
+    font-size: 1em;
+    color: lightgray;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+.clicked {
+    color: black;
+}
+
+.playback h1, .playback h3 {
+}
+.playback h1 {
+    top: 34px;
+    font-size: 1em;
+}
+.playback h3 {
+    position: absolute;
+    width: 100%;
+    font-size: .8em;
+}
+.playback .header-button {
+    padding-top: 13px;
+    height: 27px;
+}   
+.playback #content-scroller {
+    height: 403px;
+    position: relative;
+}
+.playback #content {
+    width: 345px !important;
+    padding: 0 !important;
+}
+.scrollbar {
+    background-image: url('playback-bar.png');
+    background-repeat: no-repeat;
+    min-height: 780px;
+    margin-top: 190px;
+    margin-bottom: 195px;
+}
+.playhead {
+    width: 100%; height: 3px; background-color: red;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    box-shadow: 1px 1px 2px rgba(0,0,0, .7);
+    position: absolute;
+    top: 260px;
+    z-index: 10;
+}
+.controls {
+    background-color: whitesmoke;
+    position: absolute; bottom: 0;
+    width: 100%; height: 120px;
+    margin-left: -1px;
+    box-shadow: 0px -2px 10px rgba(0,0,0,.5);
+}
+.arc {
+    width: 100%; height: auto;
+    margin-top: 5px;
+}
+.volume {
+    width: 200px; height: auto;
+    position: absolute;
+    bottom: 15px;
+    left: 50%; margin-left: -100px;
+}
+.pp-button {
+    width: 72px;
+    height: 72px;
+    position: absolute; top: -15px; left: 50%; margin-left: -36px;
+    cursor: pointer;
+}
+.play {
+    background-image: url('play.png');
+}
+.pause {
+    background-image: url('pause.png');
+}
+
+/*======================= FOOTER ============================*/
+#footer {
+    position: absolute; bottom: 0;
+    width: 100%; height: 90px;
+    margin-left: -1px;
+}
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#footer li {
+    display: inline-block;
+    width: 25%; height: 100%;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255, .5);
+    margin-right: -1px;
+}
+#footer li:first-child {
+    border: 0px;
+}
+#footer li a {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 100%; height: 100%;
+    line-height: 150px;
+    vertical-align: baseline;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    font-size: .8em;
+}
+#footer li a.selected {
+    background-color: blue;
+}
