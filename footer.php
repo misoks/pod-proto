@@ -1,10 +1,11 @@
 <?php
 function navLink($url, $linktext, $section) {
+    $textlower = strtolower($linktext);
     if ($linktext == $section) {
-        return '<li><a class="selected '.$linktext.'">'.$linktext.'</a>';
+        return '<li><a class="selected '.$textlower.'"><img class="footer-icon" src="static/'.$textlower.'.png">'.$linktext.'</a>';
     }
     else {
-        return '<li><a href="'.$url.'" class="'.$linktext.'">'.$linktext.'</a>';
+        return '<li><a href="'.$url.'" class="'.$textlower.'"><img class="footer-icon" src="static/'.$textlower.'.png">'.$linktext.'</a>';
     }
 }
 ?>

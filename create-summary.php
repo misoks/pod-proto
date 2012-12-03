@@ -14,6 +14,6 @@ your library.</p>
 
 <input type="textbox" class="name-mix" value="Name your new mix" onclick="if(this.value == 'Name your new mix') {this.value=''; this.className +=' clicked'}"></input>
 
-<a href="playback.php" class="button create">Create Mix</a><a href="adv-settings.php" class="button little">Settings</a>
+<a href="playback.php" class="button create special">Create Mix</a><a href="adv-settings.php" class="button little">Settings</a>
 
 <?php include_once('footer.php'); ?>

@@ -12,9 +12,10 @@
     <div id="phone-screen">
         <div class="playhead"></div>
         <div class="header-bar">
-            <div class="back-button"><a href="index.php" class="header-button">Home</a></div>
-            <h3>Now Playing</h3>
-            <h1>Comedy Mega-Mix</h1>
+            <a class="back-button header-button" onClick="history.go(-1);return false;">Back</a>
+            <h1>
+            <span class="h3">Now Playing</span><br>
+            Comedy Bang Bang...</h1>
         </div>
         <div id="content-scroller">
             <div class="scrollbar"></div> 
@@ -24,7 +25,7 @@
         </div>
         <div class="controls">
             <img src="static/arc.png" class="arc">
-            <div class="pp-button play" onclick="
+            <div class="pp-button pause" onclick="
                 if(this.className == 'pp-button play') {
                     this.className = 'pp-button pause';
                 }
