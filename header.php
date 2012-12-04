@@ -7,8 +7,8 @@
 
 <body>
 
-<div class="mask"></div>
 <div id="container">
+<div class="mask"></div>
 <div id="phone-frame"></div>
 <div id="phone-screen">
 

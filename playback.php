@@ -6,13 +6,15 @@
 </head>
 
 <body>
-<div class="mask"></div>
+
 <div id="container" class="playback">
+<div class="mask"></div>
     <div id="phone-frame"></div>
     <div id="phone-screen">
         <div class="playhead"></div>
         <div class="header-bar">
             <a class="back-button header-button" onClick="history.go(-1);return false;">Back</a>
+            <a class="home-button header-button" href="index.php">Home</a>
             <h1>
             <span class="h3">Now Playing</span><br>
             Comedy Bang Bang...</h1>
