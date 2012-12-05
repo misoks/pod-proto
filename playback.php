@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+<div class="name-box">Podcasts</div>
 <div id="container" class="playback">
 <div class="mask"></div>
     <div id="phone-frame"></div>
