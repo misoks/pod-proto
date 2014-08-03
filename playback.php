@@ -27,7 +27,7 @@
         </div>
         <div class="controls">
             <img src="static/arc.png" class="arc">
-            <div class="pp-button pause" onclick="
+            <div class="pp-button pause" draggable="true" onclick="
                 if(this.className == 'pp-button play') {
                     this.className = 'pp-button pause';
                 }
